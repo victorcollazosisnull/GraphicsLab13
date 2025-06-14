@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6912437595891728861
+--- !u!114 &-8674813220953390361
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,13 +20,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ToonTextureBase
-  m_Shader: {fileID: -6465566751694194690, guid: 6a23107e42f96b54ab86c07044ccd87a, type: 3}
+  m_Name: Shader Graphs_ToonTextureWithMaps
+  m_Shader: {fileID: -6465566751694194690, guid: 48ad80c0b24c8fb4c959c5426ce177bb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -37,8 +37,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AmbientOccMap:
+        m_Texture: {fileID: 2800000, guid: 7120aa26916336f42967abf248b58cd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: 8f2771f378d9e104db00c1b345c3e383, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 2800000, guid: 4cf1f749e29e840478d6c975847d163c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 9c83cee6b6d2a51469fa738ff2fb003d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 58442de8c88bb8f4792eb558e5a55e4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 35f820b4d710cd641898d12693628c96, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -55,15 +71,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Glossiness: 8.7
+    - _AmplitudeEmission: -0.46
+    - _Glossiness: 32
+    - _Height: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.48
-    - _RimThreshold: 0.79
+    - _RimAmount: 0.07
+    - _RimThreshold: 0
     m_Colors:
     - _AmbientColor: {r: 1, g: 1, b: 1, a: 0}
-    - _MainColor: {r: 0, g: 0.8274853, b: 1, a: 0}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 0}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _RimColor: {r: 8, g: 8, b: 8, a: 0}
+    - _SpecularColor: {r: 0.8207547, g: 0.6542808, b: 0.6542808, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
